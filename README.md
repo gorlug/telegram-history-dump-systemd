@@ -15,6 +15,18 @@ Copy all files to
 ~/.config/systemd/user
 ```
 
+telegram-history-dump is expected to be found in
+
+```
+~/git/telegram-history-dump
+```
+
+And the config file in
+
+```
+~/.config/telegram-history-dump/config.yaml
+```
+
 # Usage
 
 Enable and start the telegram-cli service:
