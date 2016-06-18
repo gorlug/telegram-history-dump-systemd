@@ -1,0 +1,10 @@
+[Unit]
+Description=telegram-history-dump service
+After=telegram-cli.service
+Requires=telegram-cli.service
+
+[Service]
+ExecStart=/usr/bin/ruby /home/%i/git/telegram-history-dump/telegram-history-dump.rb -c /home/%i/.config/telegram-history-dump/config.yaml
+
+[Install]
+WantedBy=default.target

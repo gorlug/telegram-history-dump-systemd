@@ -1,0 +1,8 @@
+[Unit]
+Description=telegram-cli systemd service
+
+[Service]
+ExecStart=/usr/bin/telegram-cli --json -P 9009
+
+[Install]
+WantedBy=default.target

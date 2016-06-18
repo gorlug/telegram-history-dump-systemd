@@ -1,0 +1,12 @@
+[Unit]
+Description=telegram-history-dump timer
+
+[Timer]
+OnBootSec=30min
+# Run timer again 1h after the telegram-history-dump service has ended
+OnUnitInactiveSec=1h
+Unit=telegram-history-dump@%i.service
+
+[Install]
+WantedBy=multi-user.target
+
